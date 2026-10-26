@@ -21,6 +21,14 @@ npm run build    # خروجی نهایی در پوشهٔ dist (تک‌فایل)
 npm run preview  # پیش‌نمایش خروجی build
 ```
 
+## استقرار روی GitHub Pages
+
+استقرار به‌صورت خودکار با GitHub Actions انجام می‌شود (فایل `.github/workflows/deploy.yml`):
+
+- با هر push روی شاخهٔ `main`، پروژه build و روی GitHub Pages منتشر می‌شود
+- مسیر پایهٔ Vite نسبی (`base: "./"`) است تا خروجی تک‌فایل در زیرمسیر مخزن به‌درستی بارگذاری شود
+- آدرس زنده: **https://rahmaniho.github.io/Demo3/**
+
 ## فناوری‌ها
 
 React 19 · TypeScript · Vite · Tailwind CSS 4 · lucide-react
